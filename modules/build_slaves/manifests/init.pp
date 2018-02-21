@@ -3,6 +3,7 @@
 class build_slaves (
   $distro_packages  = [],
   $UserTasksMax     = 49168,
+  $username         = 'jenkins',
   ) {
 
   class { "build_slaves::install::${::asfosname}::${::asfosrelease}":
